@@ -1,0 +1,49 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+:root{
+  --font-Poppins: "Poppins", sans-serif;
+  --font-Montserrat: "Montserrat", sans-serif;
+  --font-Playfair: 'Playfair Display', serif;
+}
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+body,
+:root {
+  min-height: 100vh !important;
+  background-color: white;
+  color: black;
+  /* font-family: var(--font-Poppins); */
+}
+.customscroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.customscroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.customscroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+.customscroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.hide-scrollbar {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE و Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;               /* Chrome و Safari */
+}

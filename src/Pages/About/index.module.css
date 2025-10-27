@@ -1,0 +1,57 @@
+.bgimg{
+    background-image: url(../../assets/bg-01.jpg);
+    background-position: 50%;
+    background-size: cover;
+   margin-top: 5%;
+}
+#ourStory{
+    padding: 50px 0px;
+}
+#textContain{
+     padding: 0px 90px 0 60px; 
+}
+.howbor{
+    position: relative;
+    z-index: 1;
+}
+.howbor::before{
+    bottom: -21px;
+    left: -21px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 370px;
+    height: 370px;
+    border: 3px solid #ccc;
+}
+.howimg{
+    display: block;
+    overflow: hidden;
+    img{
+        transition: transform 0.9s ease;
+    }
+}
+#divborderleft{
+    padding: 0 28px;
+    ul{
+        li{
+            padding: 20px 0;
+        }
+    }
+}
+.howbor2{
+    position: relative;
+    z-index: 1;
+}
+.howbor2::before{
+    bottom: -21px;
+    left: 21px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 370px;
+    height: 370px;
+    border: 3px solid #ccc;
+}

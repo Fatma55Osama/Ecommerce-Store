@@ -1,0 +1,6 @@
+.bgimg{
+    background-image: url(../../assets/bg-01.jpg);
+    background-position: 50%;
+    background-size: cover;
+   margin-top: 5%;
+}
