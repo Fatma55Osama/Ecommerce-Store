@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../../assets/logo-01.png'
 import { pathsnav, useCartmodal } from '../../store'
 import { Link, useLocation } from 'react-router-dom'
@@ -12,7 +12,7 @@ export default function Navbar() {
     const location = useLocation()
     const [isActive, setisActive] = useState()
     const [isScrolled, setIsScrolled] = useState(false);
-    const { modalindex,openModal,closeModal } = useCartmodal()
+    const { modalindex,openModal } = useCartmodal()
     useEffect(() => {
         setisActive(location.pathname)
     }, [location.pathname])
@@ -33,9 +33,9 @@ export default function Navbar() {
                     <div className=' container  col-span-3 h-full  flex items-center gap-20'>
                         <div className='h-full flex items-center justify-end '>
 
-                            <img src={logo} alt="Logo" width={133} height={17} className='object-fill ' />
+                            <img src={logo} alt="Logo"  height={17}  className='object-fill w-[110px] sm:w-[133px]' />
                         </div>
-                        <div className='text-center h-full flex justify-between gap-8 items-center '>
+                        <div className='text-center h-full  justify-between gap-8 items-center hidden sm:flex '>
                             {
                                 navItems.map((el, index) => {
                                     return (

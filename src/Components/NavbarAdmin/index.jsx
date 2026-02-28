@@ -20,7 +20,7 @@ export default function NavbarAdmin() {
   }
   const location = useLocation()
   return (
-    <div className={` w-1/5 overflow-y-auto  h-screen border-r border-[#e9ecef] shadow-[0_0_3px_#3c485826] customscroll `}  >
+    <div className={` w-1/5 h-screen hide-scrollbar overflow-y-auto border-r border-[#e9ecef] shadow-[0_0_3px_#3c485826] customscroll `}  >
       <div className='border-b-1 border-[#e9ecef] p-5'>
         <img src={logo} alt="Logo" />
       </div>

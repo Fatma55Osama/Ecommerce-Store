@@ -47,7 +47,7 @@ export default function Register() {
 
                 }, 2000)
             }
-        }).catch((err) => {
+        }).catch(() => {
             toast.error('Error in Register')
         })
     };
