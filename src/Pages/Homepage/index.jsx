@@ -3,12 +3,12 @@ import Navbar from "../../Components/Navbar";
 import SwiperSlides from "../../Components/SwiperSlid";
 import Category from "../../Components/Category";
 import ProductVeiw from "../../Components/ProductVeiw";
-import AllProductsTap1 from '../../Components/AllProductsTap1'
-import WomenTap2 from '../../Components/WomenTap2'
-import MenTap3 from '../../Components/MenTap3'
-import BagTap4 from '../../Components/BagTap4'
-import ShoesTap5 from '../../Components/ShoesTap5'
-import WatchesTap6 from '../../Components/WatchesTap6'
+import AllProductsTap1 from "../../Components/AllProductsTap1";
+import WomenTap2 from "../../Components/WomenTap2";
+import MenTap3 from "../../Components/MenTap3";
+import BagTap4 from "../../Components/BagTap4";
+import ShoesTap5 from "../../Components/ShoesTap5";
+import WatchesTap6 from "../../Components/WatchesTap6";
 
 const homeTabs = [
   {
@@ -42,7 +42,18 @@ export default function Homepage() {
       <div>
         <SwiperSlides />
         <Category />
-        <ProductVeiw title="Product Overview" tabs={homeTabs} showSearch={true} />
+        <ProductVeiw
+          title="Product Overview"
+          tabs={homeTabs}
+          showSearch={true}
+        />
+        <div className="flex flex-col justify-center items-center">
+          <div className="container flex justify-center items-center pb-5">
+            <button className="uppercase bg-[#e6e6e6] hover:bg-[#333] hover:text-white px-14 py-3 rounded-[23px]  transition-colors duration-300">
+             Load More
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

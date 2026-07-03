@@ -40,13 +40,20 @@ export default function AllProductsTap1({
         return (
           <div
             key={el.id}
-            className="h-[430px] container w-70 flex flex-col gap-2 justify-center items-center"
+            className="group relative overflow-hidden h-[430px] container w-70 flex flex-col gap-2 justify-center items-center "
           >
-            <img
-              src={el.img}
-              className="w-full h-[334px] object-contain"
-              alt=""
-            />
+            <div className="w-full h-[334px] overflow-hidden relative">
+              <img
+                src={el.img}
+                className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                alt=""
+              />
+
+              <button className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-[20px] bg-white text-[15px] text-[#333] px-8 py-2 opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out hover:bg-[#333] hover:text-white">
+                {" "}
+                Quick View
+              </button>
+            </div>
             <div className="flex flex-col  gap-4 mt-3 w-68">
               <div className="text-[#999] text-[16px] flex items-center justify-between w-full object-contain">
                 <span>{el.name}</span>
